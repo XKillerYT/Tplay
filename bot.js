@@ -342,8 +342,8 @@ client.on('message', message => {
     }
 });
 
-const adminprefix = "!";
-const devs = ['383606619671494659','383606619671494659'];
+const adminprefix = "T";
+const devs = ['339023914833281025','339023914833281025'];
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
     if (!devs.includes(message.author.id)) return;
@@ -361,7 +361,7 @@ return message.reply("**لا يمكنك تغيير الاسم يجب عليك ا
 client.user.setAvatar(argresult);
   message.channel.sendMessage(`**${argresult}** : تم تغير صورة البوت`);
       } else     
-if (message.content.startsWith(adminprefix + 'setT')) {
+if (message.content.startsWith(adminprefix + 'sett')) {
   client.user.setGame(argresult, "https://www.twitch.tv/idk");//حقوق دايموند كودز
     message.channel.sendMessage(`**تم تغيير تويتش البوت إلى  ${argresult}**`)//حقوق دايموند كودز
 }
